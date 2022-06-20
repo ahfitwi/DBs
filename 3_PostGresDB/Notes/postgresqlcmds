@@ -1,0 +1,47 @@
+
+1. Forget password
+   sudo -u postgres psql
+2. Creating user
+   $ sudo -u postgres createuser alem
+
+3. CHange password
+  ALTER USER alem PASSWORD 'alemh150';
+
+
+1. Log into your server via SSH.
+2. Access root by running the following command:
+sudo su -
+
+3. To install PostgreSQL, as well as the necessary server software, run the following command:
+
+	apt-get install postgresql postgresql-contrib
+
+4. Configure PostgreSQL to start up upon server boot.
+
+	update-rc.d postgresql enable
+
+5. Start PostgreSQL.
+
+	service postgresql start
+
+
+1. Log into the postgres user:
+
+	su - postgres
+
+2. This will bring you to a new prompt. Log into the database by typing:
+
+	psql
+
+3. You should now see a prompt for postgres=#. This means you are at a PostgreSQL prompt. To exit the interface, you can type:
+
+	\q
+
+From there, you can get back to root by typing:
+
+	exit
+
+
+pgadmin4
+https://medium.com/@philip.mutua/postgresql-install-pgadmin-4-desktop-mode-in-ubuntu-16-04-6faca19f0cfe
+
